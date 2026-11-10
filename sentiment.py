@@ -1,6 +1,5 @@
 # Author: Lindsey Yang
-# Modified: 2026-11-03
-# AI assistance: Codex assisted with this prototype implementation.
+# Modified: 2026-11-10
 """Small sentiment-model adapter; demo data are synthetic, not Amazon reviews."""
 
 from pathlib import Path

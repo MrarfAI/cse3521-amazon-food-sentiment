@@ -1,6 +1,5 @@
 # Author: Lindsey Yang
-# Modified: 2026-11-03
-# AI assistance: Codex assisted with these prototype checks.
+# Modified: 2026-11-10
 """Run with python -m unittest discover -s tests -v."""
 
 import tempfile

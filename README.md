@@ -1,6 +1,6 @@
 # Amazon Food Review Sentiment Analysis
 
-CSE 3521 · Autumn 2026 · Group 8
+CSE 3521 · Autumn 2026 · Group Theta
 
 A team project that classifies food review text as **negative** (1–2 stars), **neutral** (3 stars), or **positive** (4–5 stars), and compares model predictions in a Streamlit application.
 
@@ -53,7 +53,7 @@ The deep model will need a separate adapter after the team supplies it. This pro
 
 ## Data and reproducibility
 
-See [data/README.md](data/README.md). The instructor's shared 50,000-review sample is not available in this checkout. Obtain the assigned sample from the team/instructor; do not substitute a fresh download or treat the charter's reported sample statistics as independently verified here.
+Group Theta uses the instructor-assigned **seed 49** to draw 50,000 reviews from the full Amazon Fine Food Reviews dataset. Generate `data/group_sample_seed49.csv` using the steps in [data/README.md](data/README.md), then share that file within the team for all project stages. The charter reports 46,391 reviews after removing duplicate texts and a sample positive-class proportion of 78.1%. Recalculate held-out evaluation metrics from the agreed split.
 
 The charter plans duplicate removal before a stratified 80/20 split, shared across models, with feature fitting on training data only. Cross-validation/tuning belongs within the training partition; reserve the test set for final evaluation. Training commands and real-data results will be added by the responsible teammates when implemented. Demo pipelines are fitted in memory by `get_demo_models()`; they require no download.
 
@@ -69,7 +69,7 @@ python -m unittest discover -s tests -v
 - `Week 6.2/lecture06.pdf`, PDF pp. 4–10: Bag-of-Words, fixed vocabulary, n-grams, TF-IDF.
 - `Week 9/lecture09.pdf`, PDF pp. 12–16: Naive Bayes and text/sentiment classification.
 - `group_project.pdf`, p. 2: at least two feature representations, two classical models, one deep/modern model, evaluation, and a Streamlit app with two trained models.
-- `group_project.pdf`, pp. 3–5: M1 due Nov 8; M2 Nov 15; M3 Nov 22, each 11:59 pm. The app is advance preparation for M3, not an M1 deliverable requirement.
+- M1 is due Nov 10 at 11:59 pm under the professor's [updated deadline and group-seed announcement](https://osu.instructure.com/courses/208628/discussion_topics/4312999). `group_project.pdf`, pp. 4–5, lists M2 on Nov 15 and M3 on Nov 22 at 11:59 pm.
 - `group_project.pdf`, pp. 6–7: final report/slides due Nov 29 at 11:59 pm; live demo date is **See Carmen**, not verified here.
 - `group_project.pdf`, p. 8: repository organization, reproducibility, and continuing genuine contribution history.
 

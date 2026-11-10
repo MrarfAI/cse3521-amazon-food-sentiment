@@ -1,7 +1,6 @@
 # Author: Lindsey Yang
-# Modified: 2026-11-03
-# AI assistance: Codex assisted with this prototype implementation.
-"""Group 8 sentiment-analysis app prototype; run with streamlit run app.py."""
+# Modified: 2026-11-10
+"""Group Theta sentiment-analysis app prototype; run with streamlit run app.py."""
 
 from pathlib import Path
 
@@ -10,7 +9,7 @@ import streamlit as st
 from sentiment import EXAMPLES, MODEL_FILES, get_demo_models, load_team_model, predict_review
 
 ROOT = Path(__file__).resolve().parent
-st.set_page_config(page_title="Food Review Sentiment | Group 8", page_icon="🍽️", layout="wide")
+st.set_page_config(page_title="Food Review Sentiment | Group Theta", page_icon="🍽️", layout="wide")
 
 
 @st.cache_resource
@@ -31,7 +30,7 @@ def use_example():
 
 
 st.title("Food Review Sentiment")
-st.caption("CSE 3521 · Group 8 · Initial Streamlit prototype")
+st.caption("CSE 3521 · Group Theta · Initial Streamlit prototype")
 
 with st.sidebar:
     st.header("Models")

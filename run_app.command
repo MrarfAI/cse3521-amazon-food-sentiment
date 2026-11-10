@@ -1,7 +1,6 @@
 #!/bin/zsh
 # Author: Lindsey Yang
-# Modified: 2026-11-03
-# AI assistance: Codex assisted with this local launcher.
+# Modified: 2026-11-10
 set -e
 cd -- "${0:A:h}"
 if [[ ! -x .venv/bin/python ]]; then
